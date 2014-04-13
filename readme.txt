@@ -4,7 +4,7 @@ Donate link: http://www.oik-plugins.com/oik/oik-donate/
 Tags: woocommerce, commerce, ecommerce, shipping, weight, country, shop
 Requires at least: 3.7.1
 Tested up to: 3.9-RC1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,9 @@ Yes.
 2. Weight and Country shipping settings part two
 
 == Upgrade Notice ==
+= 1.0.6 =
+Quick fix for sites where oik base plugin is loaded after oik-weightcountry-shipping
+
 = 1.0.5 =
 Tested with WooCommerce 2.1.7 and WordPress 3.9-RC1
 
@@ -93,6 +96,9 @@ Required for WooCommerce 2.1 and above. Tested with WooCommerce 2.0 and WooComme
 Required for WooCommerce 2.1 and above. 
 
 == Changelog ==
+= 1.0.6 = 
+* Fixed: Remove dummy bw_trace2() and bw_backtrace() functions and calls.
+
 = 1.0.5 =
 * Changed: Calculates shipping charges for zero weight carts
 * Changed: Calculates charges for "any other country" using country group 0
