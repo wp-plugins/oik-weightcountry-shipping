@@ -5,7 +5,7 @@
  * Description: WooCommerce extension for Weight/Country shipping
  * Version: 1.0.7
  * Author: bobbingwide
- * Author URI: http://www.bobbingwide.com
+ * Author URI: http://www.oik-plugins.com/author/bobbingwide
  * License: GPL2
  * Text Domain: oik-weightcountry-shipping
  * Domain Path: /languages/

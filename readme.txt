@@ -1,5 +1,5 @@
 === Weight/Country Shipping for WooCommerce ===
-Contributors: bobbingwide, Andy_P, pozhonks
+Contributors: bobbingwide, Andy_P, pozhonks, vsgloik
 Donate link: http://www.oik-plugins.com/oik/oik-donate/
 Tags: woocommerce, commerce, ecommerce, shipping, weight, country, shop
 Requires at least: 3.9
