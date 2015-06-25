@@ -4,7 +4,7 @@ Donate link: http://www.oik-plugins.com/oik/oik-donate/
 Tags: woocommerce, commerce, ecommerce, shipping, weight, country, shop
 Requires at least: 3.9
 Tested up to: 4.2.2
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,7 +70,7 @@ Country Groups are groups of countries (or a single country) that share same del
 
 == Frequently Asked Questions ==
 = Which version of WooCommerce does this work on? =
-Tested with WooCommerce 2.0 up to WooCommerce 2.3.8
+Tested with WooCommerce 2.0 up to WooCommerce 2.3.11
 
 = Will it use my settings for AWD-weightcountry-shipping? =
 Yes. 
