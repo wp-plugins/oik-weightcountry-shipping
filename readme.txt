@@ -18,6 +18,10 @@ You can group countries that share same delivery costs (e.g. USA and Canada, Eur
 set the shipping costs on a per-country basis. 
 
 = Features =
+New in version 1.2
+* Ability to set zero cost shipping for certain weight ranges
+* No longer chooses the lowest rate from a higher weight range
+
 New in version 1.1
 
 * Enabled for localization in your language.
@@ -127,6 +131,9 @@ Yes. See [oik weight/country shipping FAQS](http://www.oik-plugins.com/wordpress
 4. Enable Shipping Debug Mode when modifying rates
 
 == Upgrade Notice ==
+= 1.2 =
+Upgrade if v1.1 caused Fatal errors or if you want to set zero cost shipping for certain weight bands 
+
 = 1.1 =
 First version ready for localization. Sample bbboing language supported ( locale bb_BB )
 
@@ -155,6 +162,10 @@ Required for WooCommerce 2.1 and above. Tested with WooCommerce 2.0 and WooComme
 Required for WooCommerce 2.1 and above. 
 
 == Changelog ==
+= 1.2= 
+* Fixed: Responds to 'woocommerce_init' rather than 'init' 
+* Changed: Changed the pick_smallest_rate method to pick the rate for the given weight band.  
+
 = 1.1 =
 * Added: Responds to 'init' to load language versions and initialise the logic
 * Added: Sample language files for the bbboing language ( locale bb_BB )
@@ -226,6 +237,7 @@ http://wordpress.org/support/topic/new-plugin-for-testing-for-woocommerce-21
 Jeriff Cheng has also produced a version using the changes by pozhonks
 
 http://wordpress.org/plugins/woocommerce-weight-country-based-shipping/
+This produces Notices when WP_DEBUG is true.
 
 An alternative plugin, which also takes dimensions and postcode/state into account, is available at:
 
@@ -233,7 +245,7 @@ http://wordpress.org/plugins/woocommerce-apg-weight-and-postcodestatecountry-shi
 
 Another one, by dangoodman
 
-https://wordpress.org/support/plugin/weight-based-shipping-for-woocommerce
+https://wordpress.org/plugins/weight-based-shipping-for-woocommerce/
 
 
 
@@ -250,5 +262,6 @@ Or you may find other Premium plugins
 
 * http://bolderelements.net/plugins/table-rate-shipping-for-woocommerce/
 * http://plugins.leewillis.co.uk/doc_post/destination-weight-shipping-woocommerce/
+* http://codecanyon.net/item/weight-based-shipping-for-woocommerce/10099013
 
 
