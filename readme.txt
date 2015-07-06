@@ -19,6 +19,7 @@ set the shipping costs on a per-country basis.
 
 = Features =
 New in version 1.2
+
 * Ability to set zero cost shipping for certain weight ranges
 * No longer chooses the lowest rate from a higher weight range
 
@@ -70,29 +71,13 @@ Country Groups are groups of countries (or a single country) that share same del
 
 == Frequently Asked Questions ==
 = Which version of WooCommerce does this work on? =
+
 Tested with WooCommerce 2.0 up to WooCommerce 2.3.11
-
-= Will it use my settings for AWD-weightcountry-shipping? =
-Yes. 
-
-= How do I switch to oik-weightcountry-shipping? =
-
-1. Install oik-weightcountry-shipping plugin
-1. Activate oik-weightcountry-shipping
-1. Deactivate AWD-weightcountry-shipping 
-
-= How do I upgrade to WooCommerce 2.1.x or higher? =
-
-1. Backup your site
-1. Switch to oik-weightcountry-shipping
-1. Upgrade WooCommerce
-1. Test
-1. Take another backup
 
 = What is the separator for the shipping rate table? = 
 
-You can use vertical bars, forward slashes or commas
-Blanks around values will be ignored
+You can use vertical bars, forward slashes or commas.
+Blanks around values will be ignored.
 `
 0|9.99|0
 1 | 92.99 | 0
@@ -119,10 +104,23 @@ If you want to use a different title per rate then add this for each rate where 
 
 `
 
+= Does this support multiple rates per weight/country combination? =
+
+If you have a requirement to offer multiple shipping rates per weight / country combination then we recommend the
+[Multi rate weight/country shipping for WooCommerce plugin](http://www.oik-plugins.com/oik-plugins/oik-weightcountry-shipping-pro/)
+
+The Multi rate version supports multiple rates per weight/country combination
+e.g.
+`
+100 | 1.23 | 1 | UK standard
+100 | 2.34 | 1 | UK premium
+`
+
 
 = Are there any other FAQs? =
 
 Yes. See [oik weight/country shipping FAQS](http://www.oik-plugins.com/wordpress-plugins-from-oik-plugins/oik-weightcountry-shipping-faqs)
+and [Multi rate weight/country shipping for WooCommerce FAQ's](http://www.oik-plugins.com/oik-plugins/oik-weightcountry-shipping-pro/?oik-tab=faq)
 
 == Screenshots ==
 1. Weight and Country shipping settings part one
@@ -131,6 +129,7 @@ Yes. See [oik weight/country shipping FAQS](http://www.oik-plugins.com/wordpress
 4. Enable Shipping Debug Mode when modifying rates
 
 == Upgrade Notice ==
+
 = 1.2 =
 Upgrade if v1.1 caused Fatal errors or if you want to set zero cost shipping for certain weight bands 
 
@@ -162,7 +161,8 @@ Required for WooCommerce 2.1 and above. Tested with WooCommerce 2.0 and WooComme
 Required for WooCommerce 2.1 and above. 
 
 == Changelog ==
-= 1.2= 
+
+= 1.2 = 
 * Fixed: Responds to 'woocommerce_init' rather than 'init' 
 * Changed: Changed the pick_smallest_rate method to pick the rate for the given weight band.  
 
@@ -212,56 +212,5 @@ Required for WooCommerce 2.1 and above.
 
 = 1.0 =
 * First release
-
-== Alternatives ==
-
-= Non-working solutions =
-
-As of 27th March 2014 the status of the AWD Weight/Country Shipping plugin was still showing as UNFIXED. 
-
-http://www.andyswebdesign.ie/blog/free-woocommerce-weight-and-country-based-shipping-extension-plugin/
-
-
-Another version, modified by Mantish to make it US State based, doesn't work with WooCommerce 2.1 either. 
-
-https://gist.github.com/Mantish/5658280
-
-= from WordPress.org =
-
-
-The oik-weightcountry-shipping plugin was developed from changes by pozhonks that were pasted into
-
-http://wordpress.org/support/topic/new-plugin-for-testing-for-woocommerce-21
-
-
-Jeriff Cheng has also produced a version using the changes by pozhonks
-
-http://wordpress.org/plugins/woocommerce-weight-country-based-shipping/
-This produces Notices when WP_DEBUG is true.
-
-An alternative plugin, which also takes dimensions and postcode/state into account, is available at:
-
-http://wordpress.org/plugins/woocommerce-apg-weight-and-postcodestatecountry-shipping/
-
-Another one, by dangoodman
-
-https://wordpress.org/plugins/weight-based-shipping-for-woocommerce/
-
-
-
-
-= Official WooCommerce extensions =
-These WooCommerce extensions may satisfy your requirements.
-
-* http://www.woothemes.com/products/table-rate-shipping-2/
-* http://www.woothemes.com/products/royal-mail/
-* http://www.woothemes.com/products/per-product-shipping/
-
-= Other Premium plugins =
-Or you may find other Premium plugins
-
-* http://bolderelements.net/plugins/table-rate-shipping-for-woocommerce/
-* http://plugins.leewillis.co.uk/doc_post/destination-weight-shipping-woocommerce/
-* http://codecanyon.net/item/weight-based-shipping-for-woocommerce/10099013
 
 
