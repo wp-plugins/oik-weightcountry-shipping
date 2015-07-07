@@ -18,6 +18,7 @@ You can group countries that share same delivery costs (e.g. USA and Canada, Eur
 set the shipping costs on a per-country basis. 
 
 = Features =
+
 New in version 1.2
 
 * Ability to set zero cost shipping for certain weight ranges
