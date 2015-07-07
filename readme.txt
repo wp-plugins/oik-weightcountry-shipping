@@ -4,7 +4,7 @@ Donate link: http://www.oik-plugins.com/oik/oik-donate/
 Tags: woocommerce, commerce, ecommerce, shipping, weight, country, shop
 Requires at least: 3.9
 Tested up to: 4.2.2
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,7 @@ You can group countries that share same delivery costs (e.g. USA and Canada, Eur
 set the shipping costs on a per-country basis. 
 
 = Features =
+
 New in version 1.2
 
 * Ability to set zero cost shipping for certain weight ranges
