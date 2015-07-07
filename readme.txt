@@ -129,6 +129,8 @@ and [Multi rate weight/country shipping for WooCommerce FAQ's](http://www.oik-pl
 4. Enable Shipping Debug Mode when modifying rates
 
 == Upgrade Notice ==
+= 1.3 =
+Upgrade to v1.3 if you get Notices due to missing Method title in rate line
 
 = 1.2 =
 Upgrade if v1.1 caused Fatal errors or if you want to set zero cost shipping for certain weight bands 
@@ -161,6 +163,8 @@ Required for WooCommerce 2.1 and above. Tested with WooCommerce 2.0 and WooComme
 Required for WooCommerce 2.1 and above. 
 
 == Changelog ==
+= 1.3 =
+* Fixed: Notice: Undefined offset from line 331 
 
 = 1.2 = 
 * Fixed: Responds to 'woocommerce_init' rather than 'init' 
